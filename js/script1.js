@@ -1,11 +1,9 @@
-(function (window) {
-  var yaakovGreeter = {};
-  yaakovGreeter.name = "shyaam";
-  var greeting = "goodbye";
-  yaakovGreeter.sayHello = function () {
-    console.log(greeting + yaakovGreeter.name);
-  }
 
-  window.yaakovGreeter = yaakovGreeter;
-
+(function(window) {
+    var byeSpeaker = new Object();
+    var speakWord = "Good Bye";
+    byeSpeaker.speak = function speak(name) {
+        console.log(speakWord + " " + name);
+    };
+    window.byeSpeaker = byeSpeaker;
 })(window);

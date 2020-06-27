@@ -1,14 +1,9 @@
-(function (window) {
-  var johnGreeter = {};
-  johnGreeter.name = "John";
-  var greeting = "Hello ";
-  johnGreeter.sayHi = function () {
-    console.log(greeting + johnGreeter.name);
-  }
 
-  window.johnGreeter = johnGreeter;
-
+(function(window) {
+    var helloSpeaker = new Object();
+    var speakWord = "Hello";
+    helloSpeaker.speak = function(name) {
+        console.log(speakWord + " " + name);
+    };
+    window.helloSpeaker = helloSpeaker;
 })(window);
-
-
-
